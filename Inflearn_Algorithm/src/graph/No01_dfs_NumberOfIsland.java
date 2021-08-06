@@ -1,4 +1,4 @@
-package dfs;
+package graph;
 
 class NumberOfIsland {
 	int m, n;
@@ -34,7 +34,7 @@ class NumberOfIsland {
 	}
 }
 
-public class No01_NumberOfIsland {
+public class No01_dfs_NumberOfIsland {
 	public static void main(String[] args) {
 		char[][] grid = { 
 				{ '1', '1', '1', '1', '0' }, 

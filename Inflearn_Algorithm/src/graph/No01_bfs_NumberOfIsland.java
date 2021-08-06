@@ -1,4 +1,4 @@
-package bfs;
+package graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -45,7 +45,7 @@ class NumberOfIslandBfs{
 	}
 }
 
-public class No01_NumberOfIsland {
+public class No01_bfs_NumberOfIsland {
 	public static void main(String[] args) {
 		char[][] grid = { 
 				{ '1', '1', '1', '1', '0' }, 
