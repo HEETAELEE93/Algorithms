@@ -2,7 +2,12 @@ package graph;
 
 class NumberOfIsland {
 	int m, n;
-	int[][] dirs = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+	int[][] dirs = { 
+			{ -1, 0 }, 
+			{ 1, 0 }, 
+			{ 0, -1 }, 
+			{ 0, 1 } 
+		};
 	int count = 0;
 	public int numsIslands(char[][] grid) {
 
