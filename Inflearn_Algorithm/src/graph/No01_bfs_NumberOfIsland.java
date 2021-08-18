@@ -5,7 +5,12 @@ import java.util.Queue;
 
 class NumberOfIslandBfs{
 	int m, n;
-	int[][] dirs = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+	int[][] dirs = { 
+			{ -1, 0 }, 
+			{ 1, 0 }, 
+			{ 0, -1 }, 
+			{ 0, 1 } 
+	};
 	int count = 0;
 	public int numsIsland(char[][] grid) {
 		if (grid == null || grid.length == 0 || grid[0].length == 0) {
