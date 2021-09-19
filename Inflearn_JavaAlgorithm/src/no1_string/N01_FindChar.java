@@ -18,7 +18,7 @@ class FindChar {
 	}
 }
 
-public class No01_FindChar {
+public class N01_FindChar {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 	    String str = in.next();
@@ -27,6 +27,5 @@ public class No01_FindChar {
 	    FindChar sol = new FindChar();
 	    
 	    System.out.println(sol.solution(str, c));
-	    return ;
 	}
 }
