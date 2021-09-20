@@ -18,12 +18,12 @@ class isPalindrom {
 	}
 	
 	public String solution2 (String str) {
-		String answer = "YES";
+		String answer = "NO";
 		
 		String tmp = new StringBuilder(str).reverse().toString();
 		
-		if(str.equals(tmp)) {
-			return "NO";
+		if(str.equalsIgnoreCase(tmp)) {
+			return "YES";
 		}
 		
 		return answer;
