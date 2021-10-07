@@ -32,8 +32,8 @@ public class N11_DecideTemporaryPresident {
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
 //		int[][] arr = new int[n + 1][6];
-//		for(int i = 0; i < n; i++) {
-//			for(int j = 0; j < 5; j++) {
+//		for(int i = 1; i <= n; i++) {
+//			for(int j = 1; j <= 5; j++) {
 //				arr[i][j] = sc.nextInt();
 //			}
 //		}
