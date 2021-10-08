@@ -21,6 +21,24 @@ class ContinuousSum {
 		}
 		return answer;
 	}
+	
+	public int solution2(int n) {
+		int answer = 0;
+		
+		int lt = 1, sum = 0;
+		
+		for(int rt = 1; rt < n/2+1; rt++) {
+			sum += rt;
+			if(sum == n) {
+				answer++;
+			}
+			while(sum >= n) {
+				sum -= lt++;
+			}
+		}
+		
+		return answer;
+	}
 }
 
 public class N05_ContinuousSum {
@@ -31,5 +49,6 @@ public class N05_ContinuousSum {
 		int n = 15;
 		ContinuousSum sol = new ContinuousSum();
 		System.out.println(sol.solution(n));
+		System.out.println(sol.solution2(n));
 	}
 }
