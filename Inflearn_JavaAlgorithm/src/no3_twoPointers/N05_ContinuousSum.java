@@ -27,13 +27,16 @@ class ContinuousSum {
 		
 		int lt = 1, sum = 0;
 		
-		for(int rt = 1; rt < n/2+1; rt++) {
+		for(int rt = 1; rt <= n/2+1; rt++) {
 			sum += rt;
 			if(sum == n) {
 				answer++;
 			}
 			while(sum >= n) {
 				sum -= lt++;
+				if(sum == n) {
+					answer++;
+				}
 			}
 		}
 		
