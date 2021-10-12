@@ -42,6 +42,20 @@ class ContinuousSum {
 		
 		return answer;
 	}
+	public int solution3(int n) {
+		int answer = 0, cnt = 1;	// 연속된 자연수 개수
+		
+		n--;
+		while(n > 0) {
+			cnt++;
+			n -= cnt;
+			if(n % cnt == 0) {
+				answer++;
+			}
+		}
+		
+		return answer;
+	}
 }
 
 public class N05_ContinuousSum {
@@ -53,5 +67,6 @@ public class N05_ContinuousSum {
 		ContinuousSum sol = new ContinuousSum();
 		System.out.println(sol.solution(n));
 		System.out.println(sol.solution2(n));
+		System.out.println(sol.solution3(n));
 	}
 }
