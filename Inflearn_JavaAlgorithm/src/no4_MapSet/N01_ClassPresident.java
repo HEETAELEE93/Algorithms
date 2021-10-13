@@ -24,18 +24,37 @@ class classPresident {
 		
 		return answer;
 	}
+	
+	public char solution2(int n, String str) {
+		char answer = ' ';
+		
+		Map<Character, Integer> map = new HashMap<>();
+		
+		for(char x : str.toCharArray()) {
+			map.put(x, map.getOrDefault(x, 0) + 1);
+		}
+		int max = Integer.MIN_VALUE;
+		for(char key : map.keySet()) {
+			if(map.get(key) > max) {
+				max = map.get(key);
+				answer = key;
+			}
+		}
+		return answer;
+	}
 }
 
 public class N01_ClassPresident {
 	public static void main(String[] args) {
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
-//		String str = sc.nextLine();
+//		String str = sc.next();
 		
 		int n = 15;
 		String str = "BACBACCACCBDEDE";
 		
 		classPresident sol = new classPresident();
 		System.out.println(sol.solution(n, str));
+		System.out.println(sol.solution2(n, str));
 	}
 }
