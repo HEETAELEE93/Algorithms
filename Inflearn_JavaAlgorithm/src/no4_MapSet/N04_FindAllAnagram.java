@@ -36,7 +36,25 @@ class FindAllAnagram {
 		
 		Map<Character, Integer> map1 = new HashMap<Character, Integer>();
 		Map<Character, Integer> map2 = new HashMap<>();
-	
+		for(char x : b.toCharArray()) {
+			map2.put(x, map2.getOrDefault(x, 0)+1);
+		}
+		int L = b.length() - 1;
+		for(int i = 0; i < L; i++) {
+			map1.put(a.charAt(i), map1.getOrDefault(a.charAt(i), 0)+1);
+		}
+		int lt = 0;
+		for(int rt = L; rt < a.length(); rt++) {
+			map1.put(a.charAt(rt), map1.getOrDefault(a.charAt(rt), 0)+1);
+			if(map1.equals(map2)) {
+				answer++;
+			}
+			map1.put(a.charAt(lt), map1.get(a.charAt(lt))-1);
+			if(map1.get(a.charAt(lt)) == 0) {
+				map1.remove(a.charAt(lt));
+			}
+			lt++;
+		}
 		return answer;
 	}
 }
