@@ -35,7 +35,7 @@ public class N04_Postfix {
 //		Scanner sc = new Scanner(System.in);
 //		String str = sc.next();
 		
-		String str = "352+*9-";
+		String str = "352+*9-"; // 3 * (5+2) - 9
 		
 		Postfix sol = new Postfix();
 		System.out.println(sol.solution(str));
