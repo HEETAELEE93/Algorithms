@@ -23,7 +23,7 @@ class BinaryTreeSearch{
 		// postorder
 	}
 }
-public class N05_BinaryTreeSearch {
+public class N05_BinaryTreeSearch_dfs {
 	public static void main(String[] args) {
 		BinaryTreeSearch tree = new BinaryTreeSearch();
 		tree.root = new Node(1);
