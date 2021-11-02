@@ -7,8 +7,8 @@ import java.util.Scanner;
 class StateTreeSearch {
 	public int bfs(int s, int e) {
 		Queue<Integer> que = new LinkedList<Integer>();
-		int[] dis = { 1, -1, 5 };
-		int[] check = new int[10001];;
+		int[] dis = { 1, -1, 5 }; // 앞 1, 뒤 -1, 앞 5
+		int[] check = new int[10001]; // 제한사항 10,000
 		check[s] = 1;
 		que.offer(s);
 		int L = 0;
