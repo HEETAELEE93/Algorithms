@@ -37,7 +37,7 @@ class SumOfPathSearch {
 	}
 }
 
-public class N11_SumOfPathSearch {
+public class N11_SumOfAdjacencyMatrix {
 	public static void main(String[] args) {
 		SumOfPathSearch sol = new SumOfPathSearch();
 		int n = 5;	// 정점의 수
