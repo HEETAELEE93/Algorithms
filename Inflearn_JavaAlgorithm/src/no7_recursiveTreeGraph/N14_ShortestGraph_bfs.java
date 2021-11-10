@@ -50,7 +50,7 @@ class ShortestGraph {
 	}
 	
 }
-public class N13_ShortestGraph_bfs {
+public class N14_ShortestGraph_bfs {
 	public static void main(String[] args) {
 		ShortestGraph sol = new ShortestGraph();
 		int[][] dirs = {
