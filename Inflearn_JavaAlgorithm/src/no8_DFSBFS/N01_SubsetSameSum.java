@@ -39,20 +39,24 @@ class SubsetSameSum {
 
 public class N01_SubsetSameSum {
 	public static void main(String[] args) throws IOException {
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		String num = bf.readLine();
-		int n = Integer.parseInt(num);
-		int total = 0;
-		String str = bf.readLine();
-		String[] strArr = str.split(" ");
-		int[] arr = new int[n];
-		for (int i = 0; i < n; i++) {
-			arr[i] = Integer.parseInt(strArr[i]);
-			total += arr[i];
-		}
+//		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+//		String num = bf.readLine();
+//		int n = Integer.parseInt(num);
+//		int total = 0;
+//		String str = bf.readLine();
+//		String[] strArr = str.split(" ");
+//		int[] arr = new int[n];
+//		for (int i = 0; i < n; i++) {
+//			arr[i] = Integer.parseInt(strArr[i]);
+//			total += arr[i];
+//		}
 
-//		int n = 6;
-//		int[] arr = { 1, 3, 5, 6, 7, 10 };
+		int n = 6;
+		int[] arr = { 1, 3, 5, 6, 7, 10 };
+		int total = 0;
+		for(int i : arr) {
+			total += i;
+		}
 
 		SubsetSameSum sol = new SubsetSameSum();
 		System.out.println(sol.solution_dfs(n, total, arr));
